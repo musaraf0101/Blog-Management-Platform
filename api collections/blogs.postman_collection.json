@@ -1,0 +1,123 @@
+{
+  "info": {
+    "_postman_id": "8253c5be-73eb-46f0-9456-67312068e05f",
+    "name": "blogs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "37888241",
+    "_collection_link": "https://go.postman.co/collection/37888241-8253c5be-73eb-46f0-9456-67312068e05f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "get all post",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\":\"testadmin@gmail.com\",\r\n    \"password\":\"123456789\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/blogs",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "blogs"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create new post",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\":\"test title\",\r\n    \"content\":\"test content\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/blogs",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "blogs"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update the post",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\":\"test title\",\r\n    \"content\":\"test content updated\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/blogs/10",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "blogs",
+            "10"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete post",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\":\"test title\",\r\n    \"content\":\"test content updated\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/blogs/12",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "blogs",
+            "12"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
